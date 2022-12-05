@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Remote saya -->
+  <remote name="ganteng"
+          fetch="https://github.com/Pulkit077" />
+
+  <!-- Krunul -->
+  <remote name="rooghz"
+          fetch="https://github.com/RooGhz720" />
+
  <!-- Trees -->
- <project path="device/xiaomi/sweet" name="https://github.com/Pulkit077/device_xiaomi_sweet.git" remote="github" revision="thirteen" />
- <project path="vendor/xiaomi/sweet" name="https://github.com/Pulkit077/vendor_xiaomi_sweet.git" remote="github" revision="thirteen" />
- <project path="kernel/xiaomi/sweet" name="https://github.com/RooGhz720/Aghisna_Sweet_Kernel.git" remote="github" revision="aghisna-ln8000" />
- <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" />
+ <project path="device/xiaomi/sweet" name="Pulkit077/device_xiaomi_sweet.git" remote="ganteng" revision="thirteen" />
+ <project path="vendor/xiaomi/sweet" name="Pulkit077/vendor_xiaomi_sweet.git" remote="ganteng" revision="thirteen" />
+ <project path="kernel/xiaomi/sweet" name="RooGhz720/Aghisna_Sweet_Kernel.git" remote="rooghz" revision="aghisna-ln8000" />
+ <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="ganteng" revision="master" />
  
 </manifest>
