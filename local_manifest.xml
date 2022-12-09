@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Remote saya -->
-  <remote name="ganteng"
-          fetch="https://github.com/RooGhz720" />
+<!-- Tracking -->
+  <remote name="amicia" fetch="https://github.com/RooGhz720" />
+  <remote name="krunul" fetch="https://github.com/Pulkit077" />
+  <remote name="clang" fetch="https://gitlab.com/ImSurajxD" />
+  <remote name="sdclang" fetch="https://gitlab.com/nerdprojectorg" />
 
- <!-- Trees -->
- <project path="device/xiaomi/sweet" name="device_xiaomi_sweet.git" remote="ganteng" revision="thirteen" />
- <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet.git" remote="ganteng" revision="thirteen" />
- <project path="kernel/xiaomi/sweet" name="Aghisna_Sweet_Kernel.git" remote="ganteng" revision="aghisna-ln8000" />
- 
+<!-- Additional -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="SDClang" remote="sdclang" revision="16" />
+  <remove-project name="RiceDroid/android_frameworks_base" />
+
+<!-- DT -->
+  <project path="device/xiaomi/sweet" name="device_xiaomi_sweet" remote="amicia" revision="thirteen" />
+<!-- VT -->
+  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="amicia" revision="thirteen" />
+<!-- KT -->
+  <project path="kernel/xiaomi/sweet" name="kernel_xiaomi_sweet" remote="krunul" revision="thirteen" />
+
 </manifest>
+
